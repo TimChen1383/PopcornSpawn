@@ -5,7 +5,9 @@
 #include "CoreMinimal.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "NiagaraComponent.h"
+#include "Engine/StaticMeshActor.h"
 #include "NiagaraFunctionLibrary.h"
+#include "Components/SphereComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "GameFramework/Actor.h"
 
@@ -87,5 +89,11 @@ public:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "ModularSpawn")
 	UNiagaraSystem* SpawnParticle = Cast<UNiagaraSystem>(StaticLoadObject(UNiagaraSystem::StaticClass(), NULL, TEXT("/Game/SpawnCube/NI_Spawn.NI_Spawn")));
+
+	UPROPERTY(EditAnywhere, Category="ModularSpawn")
+	UStaticMeshComponent* HitTarget = nullptr;
+
+	UPROPERTY(EditAnywhere, Category="ModularSpawn")
+	USphereComponent* HitDetectSphere = nullptr;
 	
 };

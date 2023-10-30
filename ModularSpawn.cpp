@@ -5,6 +5,7 @@
 
 
 
+
 // Sets default values
 AModularSpawn::AModularSpawn()
 {
@@ -23,7 +24,7 @@ AModularSpawn::AModularSpawn()
 	{
 		ModularMesh->SetStaticMesh(MeshToUse);
 	}
-
+	
 	//Set up Cube physics
 	ModularMesh->SetupAttachment(RootComponent);
 	ModularMesh->SetSimulatePhysics(true);
@@ -151,7 +152,6 @@ void AModularSpawn::SpawnCubes()
 		FVector ObjectLocation = SpawnLocation->GetComponentLocation();
 		FRotator ObjectRotation = SpawnLocation->GetRelativeRotation();
 		FVector ActorScale = this->GetActorScale3D();
-
 		
 		//Use defferred spawn to pass the generation value to the new spawned actor so it won't count from 0 again
 		AModularSpawn* SpawnedActor = GetWorld()->SpawnActorDeferred<AModularSpawn>(AModularSpawn::StaticClass(), FTransform());
@@ -159,9 +159,11 @@ void AModularSpawn::SpawnCubes()
 		SpawnedActor->SetActorScale3D(FVector(ObjectScale*ActorScale));
 		SpawnedActor->CurrentGeneration = CurrentGeneration;
 		SpawnedActor->FinishSpawning(FTransform());
-
-		//UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), SpawnParticle, GetActorLocation());
-
+		
+		if(CurrentGeneration <= 3)
+		{
+			UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), SpawnParticle, GetActorLocation());
+		}
 		
 	}
 
@@ -173,4 +175,5 @@ void AModularSpawn::DynamicMaterialControl()
 {
 	DynamicMaterial->SetScalarParameterValue("HighLight", 0.0f);
 }
+
 
