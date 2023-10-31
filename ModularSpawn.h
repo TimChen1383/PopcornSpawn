@@ -73,7 +73,7 @@ public:
 	UPROPERTY(EditAnywhere, Category="ModularSpawn")
 	bool IsFirstCube = false;
 
-	float ImpulseStrength = 300.0f;
+	float ImpulseStrength = 500.0f;
 
 	//this should set the variable "instance editable" and "expose to spawn"
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "ModularSpawn", meta = (ExposeOnSpawn=true))

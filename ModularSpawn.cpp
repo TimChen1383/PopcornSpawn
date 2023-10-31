@@ -13,12 +13,13 @@ AModularSpawn::AModularSpawn()
 	PrimaryActorTick.bCanEverTick = true;
 	SpawnCollisionHandlingMethod = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
 
-	MaxGeneration = UKismetMathLibrary::RandomIntegerInRange(1, 4);
+	MaxGeneration = UKismetMathLibrary::RandomIntegerInRange(1, 2);
 	NextGenSpawnTime = UKismetMathLibrary::RandomFloatInRange(1, 2);
 
 	
 	//Force assign a mesh path in C++
 	ModularMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Modular Mesh"));
+	ModularMesh->SetCollisionObjectType(ECC_WorldStatic);
 	UStaticMesh* MeshToUse = Cast<UStaticMesh>(StaticLoadObject(UStaticMesh::StaticClass(), NULL, TEXT("/Game/SpawnCube/popcorn.popcorn")));
 	if(MeshToUse && ModularMesh)
 	{
