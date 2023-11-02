@@ -1,0 +1,15 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.Popcorn.cpp.obj": [
+			"Popcorn.init.gen.cpp.obj",
+			"PopcornGrab.gen.cpp.obj",
+			"PopcornSpawn.gen.cpp.obj",
+			"PopcornSpawnTarget.gen.cpp.obj",
+			"Popcorn.cpp.obj",
+			"PopcornGrab.cpp.obj",
+			"PopcornSpawn.cpp.obj",
+			"PopcornSpawnTarget.cpp.obj"
+		]
+	}
+}

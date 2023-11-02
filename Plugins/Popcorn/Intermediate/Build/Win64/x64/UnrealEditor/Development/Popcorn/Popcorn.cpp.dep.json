@@ -1,0 +1,14 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\unrealprojects\\uecpp_practice_v2\\plugins\\popcorn\\source\\popcorn\\private\\popcorn.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unrealprojects\\uecpp_practice_v2\\intermediate\\build\\win64\\x64\\uecpp_practiceeditor\\development\\engine\\sharedpch.engine.shadowerrors.inclorderunreal5_1.h.pch",
+        "Includes": [
+            "c:\\unrealprojects\\uecpp_practice_v2\\plugins\\popcorn\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\popcorn\\definitions.popcorn.h",
+            "c:\\unrealprojects\\uecpp_practice_v2\\plugins\\popcorn\\source\\popcorn\\public\\popcorn.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

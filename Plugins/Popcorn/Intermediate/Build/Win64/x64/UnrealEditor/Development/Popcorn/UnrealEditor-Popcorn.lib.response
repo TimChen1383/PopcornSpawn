@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-Popcorn.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\UnrealProjects\UECPP_practice_V2\Intermediate\Build\Win64\x64\UECPP_practiceEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h.obj"
+"C:\UnrealProjects\UECPP_practice_V2\Plugins\Popcorn\Intermediate\Build\Win64\x64\UnrealEditor\Development\Popcorn\Module.Popcorn.cpp.obj"
+"C:\UnrealProjects\UECPP_practice_V2\Plugins\Popcorn\Intermediate\Build\Win64\x64\UnrealEditor\Development\Popcorn\Default.rc2.res"
+/OUT:"C:\UnrealProjects\UECPP_practice_V2\Plugins\Popcorn\Intermediate\Build\Win64\x64\UnrealEditor\Development\Popcorn\UnrealEditor-Popcorn.lib"
