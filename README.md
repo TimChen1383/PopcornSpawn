@@ -25,4 +25,7 @@ A popcorn effect. Automatically run the physics simulation and can be grabbed by
 ### Play
 - When Popcorn Spawn Target get hit by the bullet (hit event not overlap event), the popcorn spawn effect should start
 - Use the keyboard input you have set in the player to grab the popcorns
+
+
  
+![GIF](https://github.com/TimChen1383/PopcornSpawn/assets/37008451/20f93ff0-a175-4251-bf98-4082fd1ec6a5)
