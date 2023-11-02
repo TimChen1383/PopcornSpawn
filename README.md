@@ -1,4 +1,5 @@
 # Popcorn Spawn
+A popcorn effect. Automatically run the physics simulation and can be grabbed by player  
 
 Plugin
 - place “Popcorn” folder under UE’s Plugins folder
